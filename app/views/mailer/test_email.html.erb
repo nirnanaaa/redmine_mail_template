@@ -1,2 +1,6 @@
-<p>This is a test email sent by Redmine.<br />
-Redmine URL: <%= link_to h(@url), @url %></p>
+<%= render :partial => 'top', :formats => [:html], :locals => {:headline => "Testmail from Redmine"} %>
+
+This is just a test email
+
+
+<%= render :partial => 'bottom', :formats => [:html], :locals => {:issue_url => "https://support.er.corscience.de" } %>

@@ -1,3 +1,5 @@
+require_dependency 'mailer_template/add_bulk_header'
+
 Redmine::Plugin.register :redmine_mail_template do
   name 'Redmine Mail Template plugin'
   author 'Florian Kasper'
