@@ -1,8 +1,8 @@
 module MailerTemplate
   class AddBulkHeader < ::Rails::Railtie
     config.after_initialize do
-      ActionMailer::Base.default "Presendence" => 'Bulk'
-      ActionMailer::Base.default "X-Presendence" => 'Chunk'
+      ActionMailer::Base.default "Precendence" => 'Bulk'
+      ActionMailer::Base.default "X-Precendence" => 'Chunk'
     end
   end
 end
